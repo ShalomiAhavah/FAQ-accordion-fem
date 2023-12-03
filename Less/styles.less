@@ -1,2 +1,107 @@
+//variables 
+@white: hsl(0, 0%, 100%);
+@lightPink: hsl(275, 100%, 97%);
+@grayishPurple: hsl(292, 16%, 49%);
+@darkPurple: hsl(292, 42%, 14%);
+
+@parFontSize: 1rem;
+
+//font
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    // outline: 1px solid purple;
+}
+
+
+    
+body {
+    background: url(/assets/images/background-pattern-mobile.svg);
+    background-color: hsl(275, 100%, 97%);
+    background-repeat:no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card {
+    height: 80svh;
+    width: 80dvw;
+    background-color:@white;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow:0px 20px 50px 3px hsla(293, 16%, 49%, 0.25) ;
+    padding: 4vw;
+}
+
+.topSection {
+    height: 8dvh;
+    line-height: 8dvh;
+    margin: 0 0 3vh 0;
+    display: flex;
+    align-items: center;
+}
+
+.topSection > h1, img {
+    display: inline;
+    margin: auto 2vw auto 0;
+}
+
+.topSection > img {
+    scale: 0.6;
+}
+    
+
+#container--questions {
+    width: 72dvw;
+    height: auto;
+    background-color: rgba(255, 0, 251, 0.59);
+}
+.icon {
+    background:rgb(88, 11, 11) ;
+}
+
+.question {
+    height: 100%;
+    max-height: 100%;
+    border-bottom: 1px solid gray;
+}
+
+.question--header {
+    display: grid;
+    grid-template-columns: 75% 25%;;
+    gap: 10%;
+}
+.question p {
+    display: none;
+}
+
+.hiddenP p {
+    display: block;
+}
+.hiddenP {
+    display: block;
+}
+
+// .question:first-child >p {
+//     display: block;
+// }
+
+
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+.test {
+    height: 10px;
+    width: 200px;
+    background-image: url(/assets/images/icon-star.svg);
+}
