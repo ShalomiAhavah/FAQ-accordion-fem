@@ -31,6 +31,11 @@ body {
     justify-content: center;
 }
 
+details > summary{
+    display: flex;
+    list-style: none;
+}
+
 #card {
     height: 80svh;
     width: 80dvw;
@@ -62,46 +67,13 @@ body {
 #container--questions {
     width: 72dvw;
     height: auto;
-    background-color: rgba(255, 0, 251, 0.59);
-}
-.icon {
-    background:rgb(88, 11, 11) ;
+    border:2px solid rgba(255, 0, 251, 0.59);
 }
 
-.question {
-    height: 100%;
-    max-height: 100%;
-    border-bottom: 1px solid gray;
-}
 
-.question--header {
-    display: grid;
-    grid-template-columns: 75% 25%;;
-    gap: 10%;
-}
-.question p {
-    display: none;
-}
-
-.hiddenP p {
-    display: block;
-}
-.hiddenP {
-    display: block;
-}
-
-// .question:first-child >p {
-//     display: block;
-// }
 
 
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-
-.test {
-    height: 10px;
-    width: 200px;
-    background-image: url(/assets/images/icon-star.svg);
-}

@@ -1,17 +1,18 @@
-var element = document.getElementsByClassName("question");
-var hidden = document.getElementsByClassName("hiddenP");
-var icon = document.getElementsByClassName("icon");
+var question = document.querySelector("details");
+var icon = document.querySelector(".icon");
+var button = document.querySelector("#button");
 
-var i;
+//question.open;
 
+function changeIcon() {
 
-
-
-for (i=0; i<element.length; i++) {
-    element[i].addEventListener("click", function() {
-        this.classList.toggle("hiddenP");
-        element.style.height = "auto";
-    })
+    if (question.open) {
+        // toggle close
+        question.open = false;
+        icon.src = "assets/images/icon-plus.svg"
+        } else if(question.open = true){
+            icon.src = "assets/images/icon-minus.svg"
+        }
 }
 
-
+question.addEventListener("click", changeIcon());
