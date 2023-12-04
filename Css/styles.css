@@ -34,9 +34,14 @@ body {
   align-items: center;
   justify-content: center;
 }
-details > summary {
+details {
+  border-bottom: 1px solid gray;
+}
+summary {
   display: flex;
   list-style: none;
+  justify-content: space-between;
+  padding: 1vh 0;
 }
 #card {
   height: 80svh;
@@ -65,7 +70,17 @@ img {
 #container--questions {
   width: 72dvw;
   height: auto;
-  border: 2px solid rgba(255, 0, 251, 0.59);
+}
+.question {
+  line-height: 4dvh;
+}
+.icon {
+  width: 4dvh;
+  height: 4dvh;
+  background-image: url(/assets/images/icon-plus.svg);
+}
+details[open] .icon {
+  background-image: url(/assets/images/icon-minus.svg);
 }
 .attribution {
   font-size: 11px;
