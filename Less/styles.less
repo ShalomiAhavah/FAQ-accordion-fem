@@ -10,7 +10,7 @@
 //font
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
 
-
+//Direct Element Styles
 
 * {
     margin: 0;
@@ -18,9 +18,13 @@
     box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
     color: @darkPurple;
-    //outline: 1px solid purple;
 }
 
+*:focus {
+    outline: 2px solid purple;
+    padding: 2px 5px;
+    box-shadow:0 0 15px 5px rgba(219, 113, 219, 0.505) ;
+}
 
     
 body {
@@ -32,6 +36,7 @@ body {
     width: 100vw;
     overflow-x: hidden;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -49,10 +54,18 @@ summary{
     justify-content: space-between;
 }
 
+//Attribution
+
+footer {
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-
+//Main Design
 #card {
     height: auto;
     width: 82vw;
@@ -157,6 +170,7 @@ details[open] .icon {
         background:url(/assets/images/background-pattern-desktop.svg);
         background-repeat: no-repeat;
         background-color: @lightPink;
+        background-size: contain;
     }
 
     #card {

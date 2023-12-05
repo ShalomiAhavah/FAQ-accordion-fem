@@ -26,6 +26,11 @@
   font-family: 'Work Sans', sans-serif;
   color: hsl(292, 42%, 14%);
 }
+*:focus {
+  outline: 2px solid purple;
+  padding: 2px 5px;
+  box-shadow: 0 0 15px 5px rgba(219, 113, 219, 0.505);
+}
 body {
   background: url(/assets/images/background-pattern-mobile.svg);
   background-color: hsl(275, 100%, 97%);
@@ -35,6 +40,7 @@ body {
   width: 100vw;
   overflow-x: hidden;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -49,6 +55,11 @@ summary {
   display: flex;
   list-style: none;
   justify-content: space-between;
+}
+footer {
+  display: block;
+  position: absolute;
+  bottom: 0;
 }
 .attribution {
   font-size: 11px;
@@ -139,6 +150,7 @@ details[open] .icon {
     background: url(/assets/images/background-pattern-desktop.svg);
     background-repeat: no-repeat;
     background-color: hsl(275, 100%, 97%);
+    background-size: contain;
   }
   #card {
     width: 55vw;
