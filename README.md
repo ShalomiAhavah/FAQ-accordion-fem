@@ -12,7 +12,6 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 
@@ -35,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Front End Mentor solution](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz/hub?share=true)
+- Live Site URL: [Live Site](https://faq-accordion-fem.vercel.app/)
 
 ## My process
 
@@ -65,11 +64,18 @@ details[open] .icon {
 
 ### Continued development
 
- - JavaCript. I absolutely suck at it.
+ - JavaScript. I absolutely suck at it.
 
 
 ## Author
 
-- Website - [Julia](https://github.com/ShalomiAhavah/FAQ-accordion-fem)
+- Github - [Julia](https://github.com/ShalomiAhavah/FAQ-accordion-fem)
 - Frontend Mentor - [@ShalomiAhavah](https://www.frontendmentor.io/profile/ShalomiAhavah)
 
+
+
+I've just completed a front-end coding challenge from @frontendmentor! 🎉
+
+You can see my solution here: https://www.frontendmentor.io/solutions/faq-accordion-component-html5-css3-no-javascript-JAwH5pR7aX
+
+Any suggestions on how I can improve are welcome!
